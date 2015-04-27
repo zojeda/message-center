@@ -33,6 +33,7 @@ MessageCenterModule.
             type: type,
             status: options.status || this.status.unseen,
             processed: false,
+            addons: options.addons,
             close: function() {
               return service.remove(this);
             }
